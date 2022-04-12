@@ -68,9 +68,6 @@ namespace TestClient
                         while (socket.Available > 0);
 
                         result = builder.ToString() == "True" ? "палиндром" : "не палиндром";
-
-                        Console.WriteLine(builder.ToString());
-                        //Console.WriteLine("ответ сервера: " + builder.ToString());
                     }
 
                     socket.Shutdown(SocketShutdown.Both);
